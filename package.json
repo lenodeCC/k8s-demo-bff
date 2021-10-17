@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node dist/bin/www",
     "dev": "ts-node src/bin/www",
-    "dev-watch": "nodemon --exec \"ts-node\" src/bin/www"
+    "dev-watch": "nodemon --exec \"ts-node\" src/bin/www",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
