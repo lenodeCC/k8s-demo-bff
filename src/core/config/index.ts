@@ -2,7 +2,7 @@ import fs from "fs";
 
 const defaultConf = {
   "grpc.hello": {
-    url: "helloSvc:3000",
+    url: "helloSvc:50051",
   },
 };
 
@@ -16,8 +16,4 @@ if (fs.existsSync(userConfigPath)) {
   Object.assign(realConf, userConf);
 }
 
-export default {
-  "grpc.hello": {
-    url: "helloSvc:3000",
-  },
-};
+export default realConf;

@@ -159,3 +159,5 @@ yarn.lock
 package-lock.json
 
 ./scripts/build/*
+
+config.json

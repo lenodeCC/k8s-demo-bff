@@ -7,7 +7,7 @@ class IndexController {
     ctx.body = "this is index";
   }
   async grpcTest(ctx: Context) {
-    const result = await HelloService.sayHello("bob");
+    const result = await HelloService.sayHello(ctx.query.name ?? "bob");
     ctx.body = result;
   }
   async configTest(ctx: Context) {
