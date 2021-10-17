@@ -32,5 +32,5 @@ bff层用于测试容器间grpc通信以及configMap和secret读取
 
 ## 构建镜像
 ```
-docker build --rm -t k8s-demo-bff .
+docker build --rm -t k8s-demo-bff:latest .
 ```
