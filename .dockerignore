@@ -158,4 +158,4 @@ $RECYCLE.BIN/
 yarn.lock
 package-lock.json
 
-./script/build/*
+./scripts/build/*
