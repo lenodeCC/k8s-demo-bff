@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY ./package.json /app
 
-RUN yarn config set registry ${REGISTRY} && yarn
+RUN yarn config set registry ${REGISTRY} && yarn --build-from-source
 
 COPY ./ /app
 
@@ -15,7 +15,7 @@ RUN npm run build && \
   yarn --prod
 
 
-FROM node:14.18.1-bullseye-slim
+FROM node:14.18.1-bullseye
 
 ENV NODE_ENV=production \
   SERVER_ENV=prod
